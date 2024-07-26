@@ -17,7 +17,7 @@ const Documentation = () => {
           throw new Error("Something went wrong");
         }
         const data = await res.json();
-        console.log(data);
+        console.log('data', data);
         setDocumentation(data);
       } catch (error) {
         setError("Something went wrong");
