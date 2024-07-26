@@ -14,8 +14,8 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   };
   
     return (
-      <div>
-        <button onClick={handlePrevious} disabled={currentPage === 1}>
+      <div className= 'flex justify-between pt-6'>
+        <button onClick={handlePrevious} disabled={currentPage === 1}  >
           Previous
         </button>
         <span>

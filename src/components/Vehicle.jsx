@@ -57,11 +57,11 @@ const Vechicle = () => {
       const currentItems = vehicle.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <>
+    <div className=" p-4  w-full">
       {currentItems?.map((data, index) => {
         return (
-          <ul key={index}>
-            <li>{data.name}</li>
+          <ul key={index} className="w-full">
+            <li className="p-6 border-[1px] border-[#ccc] text-xl">{data.name}</li>
           </ul>
         );
       })}
@@ -71,7 +71,7 @@ const Vechicle = () => {
         totalPages={totalPages}
         onPageChange={setCurrentPage}
       />
-    </>
+    </div>
   );
 }
 
