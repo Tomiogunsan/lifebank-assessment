@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const handlePrevious = () => {
     if (currentPage > 1) {
@@ -12,21 +10,21 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       onPageChange(currentPage + 1);
     }
   };
-  
-    return (
-      <div className= 'flex justify-between pt-6'>
-        <button onClick={handlePrevious} disabled={currentPage === 1}  >
-          Previous
-        </button>
-        <span>
-          {" "}
-          Page {currentPage} of {totalPages}{" "}
-        </span>
-        <button onClick={handleNext} disabled={currentPage === totalPages}>
-          Next
-        </button>
-      </div>
-    );
+
+  return (
+    <div className="flex justify-between pt-6">
+      <button onClick={handlePrevious} disabled={currentPage === 1}>
+        Previous
+      </button>
+      <span>
+        {" "}
+        Page {currentPage} of {totalPages}{" "}
+      </span>
+      <button onClick={handleNext} disabled={currentPage === totalPages}>
+        Next
+      </button>
+    </div>
+  );
 };
 
-export default Pagination
+export default Pagination;
