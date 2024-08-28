@@ -1,6 +1,7 @@
 import "./App.css";
 import Documentation from "./components/Documentation";
 import Vechicle from "./components/Vehicle";
+import InputToken from 'input-token'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Vechicle />
 
       <Documentation />
+      <InputToken/>
     </div>
   );
 }
