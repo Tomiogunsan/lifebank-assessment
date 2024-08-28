@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GETDOCUMENTATION } from "../config/apiUrl";
+import InputToken from "input-token";
 
 const Documentation = () => {
   const [documentation, setDocumentation] = useState(null);
@@ -41,6 +42,7 @@ const Documentation = () => {
     <div>
       <h1>Documentation</h1>
       <p>{documentation}</p>
+      <InputToken/>
     </div>
   );
 };
